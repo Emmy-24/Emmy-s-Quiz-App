@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=, initial-scale=1.0">
+     <title>Emmy's QUiz App</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+     <!--Start Quiz Button-->
+     <div class="start_button"><button>Start Quiz</button></div>
+
+     <!--Rules Box-->
+     <div class="Rules_box">
+          <div class="Rules_title">
+               <span>Rules to the Quiz</span>
+          </div>
+          <div class="Rules_list">
+               <div class="Rules">1. You will have only <span>10 secs</span> per each Question.</div>
+               <div class="Rules">2. Once You select your answer, it can't be undone.</div>
+               <div class="Rules">3. You can't select any option once time goes off.</div>
+               <div class="Rules">4. You can't exit from the Quiz while you're playing.</div>
+               <div class="Rules">5. You'll get points on the basis of your correct answers.</div>
+          </div>
+          <div class="button">
+               <button class="quit">Exit Quiz</button>
+               <button class="Start_quiz">Start Quiz</button>
+          </div>
+     </div>
+
+     <!--Quiz Box-->
+     <div class="Quiz_box">
+          <header>
+               <div class="title">Quiz Application</div>
+               <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">10</div>
+                    </div>
+
+                    <div class="time_line"></div>
+          </header>
+          <section>
+               <div class="Question_text">
+                    <!--Question text will be inserted here by Javascript-->
+               </div>
+               <div class="Option_list">
+                    <!--Options list will be inserted here by Javascript-->
+               </div>
+          </section>
+          <!--Footer of the Quiz Box-->
+          <footer>
+               <div class="total_question">
+                    <!-- Question count number will be inserted here by Javascript-->
+               </div>
+               <button class="next_question">Next  Question</button>
+          </footer>
+     </div>
+
+     <!--Result Box-->
+     <div class="Result_box">
+          <div class="icon"> <i class="fas fa-crown"></i></div>
+          <div class="complete_text">You Have Completed the Quiz!</div>
+          <div class="score_text">
+               <!--Score result will be inserted here ny Javascript-->
+          </div>
+          <div class="button">
+               <button class="quit">End Quiz</button>
+          </div>
+     </div>
+
+     <!--JAvascript file for Questions and Options-->
+     <script src="/Javascript/questions.js"></script>
+     <!--Javascript file containing all quiz logic-->
+     <script src="/Javascript/script.js"></script>
+</body>
+</html>
