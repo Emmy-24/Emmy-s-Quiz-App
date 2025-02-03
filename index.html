@@ -2,51 +2,29 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta name="viewport" content="width=, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Emmy's QUiz App</title>
      <link rel="stylesheet" href="/style.css">
+     
 </head>
 <body>
-     <!--Start Quiz Button-->
-     <div class="start_button"><button>Start Quiz</button></div>
-
-     <!--Rules Box-->
-     <div class="Rules_box">
-          <div class="Rules_title">
-               <span>Rules to the Quiz</span>
-          </div>
-          <div class="Rules_list">
-               <div class="Rules">1. You will have only <span>10 secs</span> per each Question.</div>
-               <div class="Rules">2. Once You select your answer, it can't be undone.</div>
-               <div class="Rules">3. You can't select any option once time goes off.</div>
-               <div class="Rules">4. You can't exit from the Quiz while you're playing.</div>
-               <div class="Rules">5. You'll get points on the basis of your correct answers.</div>
-          </div>
-          <div class="button">
-               <button class="quit">Exit Quiz</button>
-               <button class="Start_quiz">Start Quiz</button>
-          </div>
-     </div>
-
      <!--Quiz Box-->
      <div class="Quiz_box">
-          <header>
-               <div class="title">Quiz Application</div>
-               <div class="timer">
-                    <div class="time_left_txt">Time Left</div>
-                    <div class="timer_sec">10</div>
-                    </div>
-
-                    <div class="time_line"></div>
-          </header>
-          <section>
-               <div class="Question_text">
+               <h1 class="Quiz_title">Quiz Application</h1>
+     
+               <div class="Question_content">
+                    <h2 class="Question_text">What does HTML stand for?</h2>
+                    <ul class="Answer_options">
+                         <li class="Answer_option"><p>Hyper Text Markup Language</p></li>
+                         <li class="Answer_option"><p>High Tech Modern Language</p></li>
+                         <li class="Answer_option"><p>Hyperlink and Text Markup Language</p></li>
+                    </ul>
                     <!--Question text will be inserted here by Javascript-->
                </div>
                <div class="Option_list">
                     <!--Options list will be inserted here by Javascript-->
                </div>
-          </section>
+          
           <!--Footer of the Quiz Box-->
           <footer>
                <div class="total_question">
@@ -58,7 +36,7 @@
 
      <!--Result Box-->
      <div class="Result_box">
-          <div class="icon"> <i class="fas fa-crown"></i></div>
+          <img src="/quiz-over.png" class="Result_img">
           <div class="complete_text">You Have Completed the Quiz!</div>
           <div class="score_text">
                <!--Score result will be inserted here ny Javascript-->
@@ -67,10 +45,9 @@
                <button class="quit">End Quiz</button>
           </div>
      </div>
-
-     <!--JAvascript file for Questions and Options-->
-     <script src="/Javascript/questions.js"></script>
-     <!--Javascript file containing all quiz logic-->
-     <script src="/Javascript/script.js"></script>
+<!--JAvascript file for Questions, Options and Answers-->
+<script src="/Javascript/questions.js"></script>
+<!--Javascript file containing all quiz logic-->
+<script src="/Javascript/script.js"></script>
 </body>
 </html>

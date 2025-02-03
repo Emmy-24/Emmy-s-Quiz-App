@@ -1,8 +1,8 @@
 // Selecting all Required Elements
 
 const Rulesbox = document.querySelector(".Rules_box");
-const exitbutton = infobox.querySelector("..button .quit");
-const continuebutton = infobox.querySelector(".buttons .Start_quiz"); 
+const exitbutton = Rulesbox.querySelector(".button .quit");
+const continuebutton = Rulesbox.querySelector(".button .Start_quiz"); 
 const Quizbox = document.querySelector(".Quiz_box");
 const resultbox = document.querySelector(".Result_box");
 const optionlist = document.querySelector("Options_list");
